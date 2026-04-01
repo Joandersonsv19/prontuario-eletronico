@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1774929490592,
+      "tag": "0000_uneven_toxin",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1774929617054,
+      "tag": "0001_fine_rocket_raccoon",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1774931204439,
+      "tag": "0002_cynical_masked_marvel",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1774931776705,
+      "tag": "0003_uneven_mongoose",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1774932185998,
+      "tag": "0004_majestic_thunderbolt",
+      "breakpoints": true
+    }
+  ]
+}
