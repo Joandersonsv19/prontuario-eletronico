@@ -13,11 +13,8 @@ const queryClient = new QueryClient();
 const redirectToLoginIfUnauthorized = (error: unknown) => {
   if (!(error instanceof TRPCClientError)) return;
   if (typeof window === "undefined") return;
-
   const isUnauthorized = error.message === UNAUTHED_ERR_MSG;
-
   if (!isUnauthorized) return;
-
   window.location.href = getLoginUrl();
 };
 
@@ -40,7 +37,7 @@ queryClient.getMutationCache().subscribe(event => {
 const trpcClient = trpc.createClient({
   links: [
     httpBatchLink({
-      url: "/api/trpc",
+      url: "https://prontuario-api-9zyj.onrender.com/api/trpc",
       transformer: superjson,
       fetch(input, init) {
         return globalThis.fetch(input, {
